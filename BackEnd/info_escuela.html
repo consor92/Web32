@@ -1,0 +1,126 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+  </head><body>
+    <div class="navbar navbar-default navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li>
+              <a href="config.html">Configuracion Gral.</a>
+            </li>
+            <li>
+              <a href="admin_usuarios">Usuarios</a>
+            </li>
+            <li class="active">
+              <a href="info_escuela.html">Información Academica</a>
+            </li>
+            <li>
+              <a href="novedades.html">Novedades</a>
+            </li>
+            <li>
+              <a href="protecto_escuela.html">Proyecto Escuela</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#">User</a>
+            </li>
+            <li class="active">
+              <a href="#">Fecha</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <!--Información de Contacto -------------------->
+        <div class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Información de Contacto</div>
+            <div class="panel-body">
+              <div class="form-group col-xs-6">
+                <label>Email</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+              <div class="form-group col-xs-6">
+                <label>Dirección</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+              <div class="form-group col-xs-6">
+                <label>Teléfono</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+              <div class="form-group col-xs-6">
+                <label>Fax</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Información de Inscripciones -------------------->
+        <div class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Información de Inscripciones</div>
+            <div class="panel-body">
+              <div class="form-group col-xs-7">
+                <label>Inscripciones para Ingreso</label>
+                <input type="file" class="form-control">
+              </div>
+              <div class="form-group form-group-inline col-xs-12">
+                <hr class="form-group" draggable="true">
+              </div>
+              <div class="form-group col-xs-7">
+                <label>Inscripciones para Ingreso</label>
+                <input type="file" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Recursos -------------------->
+        <div class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Recursos</div>
+            <div class="panel-body">
+              <textarea name="text" id="summernote" title="Contents" rows="8"></textarea>
+            </div>
+          </div>
+        </div>
+        <!--Recursos -------------------->
+        <div class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Autoridades</div>
+            <div class="panel-body">
+              <textarea name="text1" id="summernote1" title="Contents" rows="8"></textarea>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------->
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <!--Carga menu de los textarea -------------------->
+    <script>
+      $(document).ready(function() {
+                $('#summernote').summernote();
+        		$('#summernote1').summernote();
+            });
+    </script>
+    <!---------------------------------------------- -->
+  
+
+</body></html>
